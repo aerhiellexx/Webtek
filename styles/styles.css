@@ -56,6 +56,12 @@ margin: auto;
 	font-family: rockwell;
 }
 
+.header1 {
+	height:376px;
+	width:100%;
+	overflow:hidden
+}
+
 .headerLogo{
 	float: left;
 }
@@ -187,10 +193,20 @@ margin: auto;
 	background-color: none;
 }
 
+.footer {
+	text-align: center;
+}
+
 #maindiv-Phead{
 	font-family: Verdana, Geneva, sans-serif;
 	color: #DE2828;
 	background-image: url(../images/t.jpg);
 	background-repeat: no-repeat;
 	line-height: 125px;
+}
+
+h3 {
+	color: #008080;
+	font-weight: 400;
+	letter-spacing: 5;
 }
