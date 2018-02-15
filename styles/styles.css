@@ -205,8 +205,10 @@ margin: auto;
 	line-height: 125px;
 }
 
-h3 {
-	color: #008080;
+#title {
+	text-align: center;
 	font-weight: 400;
 	letter-spacing: 5;
+	font-family: rockwell;
+	line-height: 80px;
 }
