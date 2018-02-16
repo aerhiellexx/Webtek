@@ -110,8 +110,19 @@
                 <h5>Server Error(5xx)</h5>
                 <p>500 Internal Server Eror</p><p>501 Not Implanted</p>
                 <p>502 Bad Gateway</p><p>503 Server Unavailable</p>               
-                <p>504 Gateway Timeout</p><p>505 Http Version Not Supported</p>  
+                <p>504 Gateway Timeout</p><p>505 Http Version Not Supported</p>
 	</div>
+	<button class="accordion"><h5>HTTP Request Methods</h5></button>
+    <div class="panel">
+    		<p><h4>Get</h4> - used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity. </p>
+    		<p><h4>Head</h4> - identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers. </p>
+    		<p><h4>Post</h4> - used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data. </p>
+    		<p><h4>Post</h4> - used to request the server to store the enclosed entity in the message body under the specified request uri. </p>
+    		<p><h4>Delete</h4> - used to request the server to delete the resource identified by the request uri. </p>
+    		<p><h4>Options</h4> - used to request from the server information about the communication options available for the response identified by the required uri. </p>
+    		<p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
+    		<p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
+    </div>
 	<script src="../js/accordion.js"></script>
 </body>
 </html>
