@@ -123,6 +123,19 @@
     		<p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
     		<p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
     </div>
+<button class="accordion"><h5>Request Message Headers</h5></button>
+    <div class="panel">
+	    <h4>Genral Headers Fields</h4>
+	    <p><h3>Cashe Control</h3> - Use for collecting and storing valuable data for both request and response and to be used later for realoding a certain file or site. </p>
+	    <p><h3>Connection</h3> - Use to control network connection.Example of this is "Keep-Alive" this will keep the connection until you close the browser.    </p>	
+	    <p><h3>Date</h3> - Use to know the date and time the message is send.</p>
+	    <p><h3>Pragma</h3> - Use to implement specific header that may effect the responds and request chain.</p> 
+	    <p><h3>Trailer</h3> - Allows user to send a other field to supply metada that could be generate  while being sent. such as a message integrity check, digital signature, or post-processing status.  </p>
+	    <p><h3>Transfer Encoding<h3/> - Form of encoding used to safely transfer the entity to the user.</p>
+	    <p><h3>Upgrade</h3> - Allows simple mechanical transition of http1.1 to other protocol in the same connection.</p>
+	    <p><h3>Via</h3> - Indicates the presence of protol and recepients between server and user.
+	    <p><h3>Warning</h3> - Information that has possible problem to the status of the message.</p> 
+</div>    
     <h1 id = "title"> Hypertext Markup Language </h1>
     	<button class="accordion">
     		<h5>HTML History</h5>
