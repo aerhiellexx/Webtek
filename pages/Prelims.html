@@ -64,6 +64,7 @@
             <p>HTTP uses a request-response standard protocol </p>
             <p>HTTP is a stateless communication protocol </p>
             <p>HTTP provides support for other functionalities </p>
+            <p>HTTP resource addressing </p>
     </div>
 
     <button class="accordion"><h5>HTTP Request Message</h5></button>
@@ -75,29 +76,29 @@
     </div>
     <button class="accordion"><h5>HTTP Response Message</h5></button>
     <div class="panel">
-	      <h5>Status Line </h5>
-    		<p> 1.Protocol Version </p>
-    		<p> 2.Status Code </p>
-    		<p> Reason Phase</p>
-    		<h5>Status Code</h5>
+	           <h3>Status Line </h3>
+    		      <p> 1.Protocol Version </p>
+    		      <p> 2.Status Code </p>
+    		      <p> Reason Phase</p>
+    		      <h3>Status Code</h3>
 
-                <h5>Information(1xx)</h5>
+                <h4>Information(1xx)</h4>
                 <p>100 Continue</p>
                 <p>101 Switiching Protocol</p>
 
-                <h5>Success(2xx)</h5>
+                <h4>Success(2xx)</h4>
                 <p>200 OK</p><p>201 Created</p>
                 <p>202 Accepted</p><p>203 Non-Authorized</p>               
                 <p>204 No Content</p><p>205 Reset Content</p>               
                 <p>206 Partial Content</p>
 
-                <h5>Redirection(3xx)</h5>
+                <h4>Redirection(3xx)</h4>
                 <p>300 Multiple Choice</p><p>301 Moved Permanently</p>
                 <p>302 Found</p><p>303 See Other</p>               
                 <p>304 Not Modified/p><p>305 Use Proxy</p>               
                 <p>306 (Unused)</p><p>307 Temporary Redirect</p> 
 
-                <h5>Client Error (4xx)</h5>
+                <h4>Client Error (4xx)</h4>
                 <p>400 Bad Request</p><p>401 Unauthorized</p>
                 <p>402 Payment Required</p><p>403 Forbidden</p>               
                 <p>404 Not Found</p><p>405 Method Not Allowed</p>               
@@ -107,7 +108,7 @@
                 <p>412 Precondition Failed</p><p>413 Request Entity To Large</p> 
                 <p>414 Connection Terminate</p>
 
-                <h5>Server Error(5xx)</h5>
+                <h4>Server Error(5xx)</h4>
                 <p>500 Internal Server Eror</p><p>501 Not Implanted</p>
                 <p>502 Bad Gateway</p><p>503 Server Unavailable</p>               
                 <p>504 Gateway Timeout</p><p>505 Http Version Not Supported</p>
@@ -123,39 +124,34 @@
     		<p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
     		<p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
     </div>
-<button class="accordion"><h5>Request Message Headers</h5></button>
+<button class="accordion"><h5>HTTP Message Headers</h5></button>
     <div class="panel">
-	    <h4>Genral Headers Fields</h4>
-	    <p><h3>Cashe Control</h3> - Use for collecting and storing valuable data for both request and response and to be used later for realoding a certain file or site. </p>
-	    <p><h3>Connection</h3> - Use to control network connection.Example of this is "Keep-Alive" this will keep the connection until you close the browser.    </p>	
-	    <p><h3>Date</h3> - Use to know the date and time the message is send.</p>
-	    <p><h3>Pragma</h3> - Use to implement specific header that may effect the responds and request chain.</p> 
-	    <p><h3>Trailer</h3> - Allows user to send a other field to supply metada that could be generate  while being sent. such as a message integrity check, digital signature, or post-processing status.  </p>
-	    <p><h3>Transfer Encoding<h3/> - Form of encoding used to safely transfer the entity to the user.</p>
-	    <p><h3>Upgrade</h3> - Allows simple mechanical transition of http1.1 to other protocol in the same connection.</p>
-	    <p><h3>Via</h3> - Indicates the presence of protol and recepients between server and user.
-	    <p><h3>Warning</h3> - Information that has possible problem to the status of the message.</p> 
+	    <h3>General Header Fields</h3>
+	    <p><h4>Cache-control</h4> - Use for collecting and storing valuable data for both request and response and to be used later for realoding a certain file or site. </p>
+	    <p><h4>Connection</h4> - Use to control network connection.Example of this is "Keep-Alive" this will keep the connection until you close the browser.    </p>	
+	    <p><h4>Date</h4> - Use to know the date and time the message is send.</p>
+	    <p><h4>Pragma</h4> - Use to implement specific header that may effect the responds and request chain.</p> 
+	    <p><h4>Trailer</h4> - Allows user to send a other field to supply metada that could be generate  while being sent. such as a message integrity check, digital signature, or post-processing status.  </p>
+	    <p><h4>Transfer Encoding</h4> - Form of encoding used to safely transfer the entity to the user.</p>
+	    <p><h4>Upgrade</h4> - Allows simple mechanical transition of http1.1 to other protocol in the same connection.</p>
+	    <p><h4>Via</h4> - Indicates the presence of protol and recepients between server and user. </p>
+	    <p><h4>Warning</h4> - Information that has possible problem to the status of the message.</p>
+
+        <h3>Request Header Fields</h3>
+        <p><h4>Accept</h4> - Informs the server about the types of data that can be sent back. </p>
+        <p><h4>Accept-charset</h4> - Informs the server about which character set the client is able to understand. </p>   
+        <p><h4>Accept-encoding</h4> - Informs the server about the encoding algorithm, usually a compression algorithm, that can be used on the resource sent back. </p>
+        <p><h4>Accept-language</h4> - Informs the server about the language the server is expected to send back. </p> 
+        <p><h4>Authorization</h4> - Contains the credentials to authenticate a user agent with a server. </p>
+        <p><h4>Expect</h4> - Indicates expectations that need to be fulfilled by the server in order to properly handle the request. </p>
+        <p><h4>From</h4> - Contains an Internet email address for a human user who controls the requesting user agent. </p>
+        <p><h4>Host</h4> - Specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening. </p>
+        <p><h4>If-match</h4> - Makes the request conditional and applies the method only if the stored resource matches one of the given ETags. </p>
+        <p><h4>If-modified-since</h4> - Makes the request conditional and expects the entity to be transmitted only if it has been modified after the given date. </p>
+        <p><h4>If-none-match</h4> - Makes the request conditional and applies the method only if the stored resource doesn't match any of the given ETags. This is used to update caches (for safe requests), or to prevent to upload a new resource when one is already existing. </p>
 </div>    
     <h1 id = "title"> Hypertext Markup Language </h1>
-    	<button class="accordion">
-    		<h5>HTML History</h5>
-    	</button>
-    <div class="panel">
-    	<p>
-    		The founder of HTML was Tim Berners-Lee and his product was made attractive to the general public by Mosaic browser which was evolved at NCSA. It has become extremely popular and well-known in the 1990’s when the Internet had been developing rapidly. During this period, HTML was broadened and presented in different modifications. The Internet strongly depends on vendors and page creators who share the joint conventions for HTML. The understanding that success of Web development is based on integration of the rules has helped the Web community to create united specifications for HTML. 
-
-    		<br>
-    				
-			Most users and developers understand that HTML documents must work in the same way on different platforms and browsers. Compatibility of HTML is its key benefit and it saves time for developers who don’t have to create several versions of a document for different users. Otherwise the Internet wouldn’t be able to be so easy-to-access and the ‘battle of formats’ would be a serious obstacle for the Web evolution. 
-
-			<br>
-
-			The vision of the HTML developers is that all devices must be able to reach the data on the Internet: computers with different platforms, browsers and characteristics, pocket devices, cell phones, devices for speech, and many others.
-    	</p>	
-    </div>
-    <button class="accordion">
-    	<h5>Hypertext Markup Language</h5>
-    </button>
+    <button class="accordion"><h5>HTML</h5></button>
     <div class="panel">
     	<p>
     		HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript). 
@@ -167,11 +163,26 @@
 			<br> 
 
 			HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, and many others.
-
     	</p>
-    </div>	
+    </div>
+    <button class="accordion">
+            <h5>HTML History</h5>
+        </button>
+    <div class="panel">
+        <p>
+            The founder of HTML was Tim Berners-Lee and his product was made attractive to the general public by Mosaic browser which was evolved at NCSA. It has become extremely popular and well-known in the 1990’s when the Internet had been developing rapidly. During this period, HTML was broadened and presented in different modifications. The Internet strongly depends on vendors and page creators who share the joint conventions for HTML. The understanding that success of Web development is based on integration of the rules has helped the Web community to create united specifications for HTML. 
+
+            <br>
+                    
+            Most users and developers understand that HTML documents must work in the same way on different platforms and browsers. Compatibility of HTML is its key benefit and it saves time for developers who don’t have to create several versions of a document for different users. Otherwise the Internet wouldn’t be able to be so easy-to-access and the ‘battle of formats’ would be a serious obstacle for the Web evolution. 
+
+            <br>
+
+            The vision of the HTML developers is that all devices must be able to reach the data on the Internet: computers with different platforms, browsers and characteristics, pocket devices, cell phones, devices for speech, and many others.
+        </p>    
+    </div>
         <button class="accordion">
-    	<h5>Verions</h5>
+    	<h5>HTML Versions</h5>
     </button>
 	<script src="../js/accordion.js"></script>
 </body>
