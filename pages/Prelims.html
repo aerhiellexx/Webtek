@@ -149,7 +149,25 @@
         <p><h4>If-match</h4> - Makes the request conditional and applies the method only if the stored resource matches one of the given ETags. </p>
         <p><h4>If-modified-since</h4> - Makes the request conditional and expects the entity to be transmitted only if it has been modified after the given date. </p>
         <p><h4>If-none-match</h4> - Makes the request conditional and applies the method only if the stored resource doesn't match any of the given ETags. This is used to update caches (for safe requests), or to prevent to upload a new resource when one is already existing. </p>
-</div>    
+	<p><h4>If-Range</h4> - Is a special condition request that is similar to If-match and If-Unmodified-Since but it ignores the range of header field if the specific range did not match resulting to a 412 error.</p>
+	<p><h4>If-Unmodified-since</h4> - Makes the request is conditional on the last modified date early than or equl to the date provided. </p>
+	<p><h4>Max-Forward</h4> - Method to limit the number of a proxies that can forward to the server. It is also associated with Trace and Option.</p>
+	<p><h4>Proxy-Authorization</h4> - Allows client to indentify it's self to a server that requires a password and username to enter  .</p>
+	<p><h4>Range</h4> - Allows user to set a specific range of HTTP message / document from the client. </p>
+	<p><h4>Referer</h4> - Allows a server to generate a list of link to the resources for logging and caching. </p>
+	<p><h4>User-Agent</h4> - A header field contains where a user agent request came from.</p>
+
+	<h3>Respone Header fields</h3>
+	<p><h4>Accept-Ranges</h4> - Allows the server to indicate it's acceptance of range on the resource.</p>
+	<p><h4>Age</h4> - The amount of time since a responce was made from the server.</p>
+	<p><h4>Etag</h4> - The current value of the entity tag for requested variant.</p>
+	<p><h4>Location</h4> -Redirecting the user to other location other than the requested Url of the new resource or site and the user must have a 3xx reponse.</p>
+	<p><h4>Proxy-Authenticate</h4> - Indicates the authentication scheme and parameter to the proxy.</p>
+	<p><h4>Retry-After</h4> - Indicates how long the service to unavailable to the user. 503 Service Unavailble.</p>
+	<p><h4>Server</h4> - Contains the details of what software is being used to the origin server to handle the requst.</p>
+	<p><h4>Vary</h4> - ndicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
+	<p><h4>WWW-Authenticate</h4> -It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
+</div>
     <h1 id = "title"> Hypertext Markup Language </h1>
     <button class="accordion"><h5>HTML</h5></button>
     <div class="panel">
