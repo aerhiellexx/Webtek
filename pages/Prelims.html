@@ -250,6 +250,20 @@
 	<p><h4>Server</h4> - Contains the details of what software is being used to the origin server to handle the requst.</p>
 	<p><h4>Vary</h4> - ndicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
 	<p><h4>WWW-Authenticate</h4> -It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
+
++	<h3>Entity Header fields</h3>
++	<p><h4>Allow</h4>lists the set of methods supported by the resource identified by the Request-URI.</p>
++	<p><h4>Content-Encoding</h4>is used as a modifier to the media-type.</p>
++	<p><h4>Content-Language</h4>describes the natural language(s) of the intended audience for the enclosed entity.</p>
++	<p><h4>Content-Length</h4>indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET. </p>
++	<p><h4>Content-Location</h4>MAY be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource's URI.</p>
++	<p><h4>Content-MD5</h4>as defined in RFC 1864, is an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body.</p>
++	<p><h4>Content-Range</h4>is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</p>
++	<p><h4>Content-Type</h4>indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. </p>
++	<p><h4>Expires</h4>gives the date/time after which the response is considered stale.</p>
++	<p><h4>Last-Modified</h4>indicates the date and time at which the origin server believes the variant was last modified.</p>
++	<p><h4>extension-header</h4>mechanism allows additional entity-header fields to be defined without changing the protocol, but these fields cannot be assumed to be recognizable by the recipient.</p>
+
 </div>
     <h1 id = "title"> Hypertext Markup Language </h1>
     <button class="accordion"><h5>HTML</h5></button>
