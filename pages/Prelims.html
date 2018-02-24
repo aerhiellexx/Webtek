@@ -133,68 +133,93 @@
 	<h1 id = "title"> Hypertext Transfer Protocol </h1>
 	<button class="accordion"><h5>HTTP Versions</h5></button>
 	<div class="panel">
-	 		<p>1. HTTP 0.9 - 1991 on;y 3 methods (get, head, post) </p>
-	 		<p>2. HTTP 1.0 (RFC 1945, May 1996) all 8 methods </p>
-	 		<p>3. HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 June 1999) </p>
+        <ol>
+	 		<li> HTTP 0.9 - 1991 only 3 methods (get, head, post) </li>
+	 		<li> HTTP 1.0 (RFC 1945, May 1996) all 8 methods </li>
+	 		<li> HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 June 1999) </li>
+        </ol>
     </div>
 
     <button class="accordion"><h5>HTTP Fundamentals</h5></button>
     <div class="panel">
-	 		<p>HTTP runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p>
-            <p>HTTP is based on a client server architecture</p>
-            <p>> Client (aka User Agents) i.e., web browsers, web crawlers, and other end user tools and applications</p>
-            <p>> Servers i.e., origin servers, proxy servers, gateway</p>
-            <p>HTTP uses a request-response standard protocol </p>
-            <p>HTTP is a stateless communication protocol </p>
-            <p>HTTP provides support for other functionalities </p>
-            <p>HTTP resource addressing </p>
+        <ul style="list-style-type:disc">
+	 		<li><p>HTTP runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p></li>
+            <li><p>HTTP is based on a client server architecture</p></li>
+            <li><p> Client (aka User Agents) i.e., web browsers, web crawlers, and other end user tools and applications</p></li>
+            <li><p> Servers i.e., origin servers, proxy servers, gateway</p></li>
+            <li><p>HTTP uses a request-response standard protocol </p></li>
+            <li><p>HTTP is a stateless communication protocol </p></li>
+            <li><p>HTTP provides support for other functionalities </p></li>
+            <li><p>HTTP resource addressing </p></li>
+        </ul>
     </div>
 
     <button class="accordion"><h5>HTTP Request Message</h5></button>
     <div class="panel">
-    		<p> Request line </p>
-    		<p> Message headers </p>
-    		<p> Empty line </p>
-    		<p> Message body </p>
+        <ul>
+    		<li><p> Request line </p></li>
+    		<li><p> Message headers </p></li>
+    		<li><p> Empty line </p></li>
+    		<li><p> Message body </p></li>
+        </ul>
     </div>
     <button class="accordion"><h5>HTTP Response Message</h5></button>
     <div class="panel">
 	           <h3>Status Line </h3>
-    		      <p> 1.Protocol Version </p>
-    		      <p> 2.Status Code </p>
-    		      <p> Reason Phase</p>
+                <ol>
+    		      <li><p> Protocol Version </p></li>
+    		      <li><p> Status Code </p></li>
+    		      <li><p> Reason Phase</p></li>
+                </ol>
     		      <h3>Status Code</h3>
 
                 <h4>Information(1xx)</h4>
-                <p>100 Continue</p>
-                <p>101 Switiching Protocol</p>
+                <p><b>100</b> Continue</p>
+                <p><b>101</b> Switiching Protocol</p>
 
                 <h4>Success(2xx)</h4>
-                <p>200 OK</p><p>201 Created</p>
-                <p>202 Accepted</p><p>203 Non-Authorized</p>               
-                <p>204 No Content</p><p>205 Reset Content</p>               
-                <p>206 Partial Content</p>
+                <p><b>200</b> OK</p>
+                <p><b>201</b> Created</p>
+                <p><b>202</b> Accepted</p>
+                <p><b>203</b> Non-Authorized</p>               
+                <p><b>204</b> No Content</p>
+                <p><b>205</b> Reset Content</p>      
+                <p><b>206</b> Partial Content</p>
 
                 <h4>Redirection(3xx)</h4>
-                <p>300 Multiple Choice</p><p>301 Moved Permanently</p>
-                <p>302 Found</p><p>303 See Other</p>               
-                <p>304 Not Modified/p><p>305 Use Proxy</p>               
-                <p>306 (Unused)</p><p>307 Temporary Redirect</p> 
+                <p><b>300</b> Multiple Choice</p>
+                <p><b>301</b> Moved Permanently</p>
+                <p><b>302</b> Found</p>
+                <p><b>303</b> See Other</p>               
+                <p><b>304</b> Not Modified/p>
+                <p><b>305</b> Use Proxy</p>               
+                <p><b>306</b> (Unused)</p>
+                <p><b>307</b> Temporary Redirect</p> 
 
                 <h4>Client Error (4xx)</h4>
-                <p>400 Bad Request</p><p>401 Unauthorized</p>
-                <p>402 Payment Required</p><p>403 Forbidden</p>               
-                <p>404 Not Found</p><p>405 Method Not Allowed</p>               
-                <p>406 not acceptable for url</p><p>407 Proxy Authentication</p>
-                <p>408 Request Timeout/p><p>409 Conflict</p>               
-                <p>410 Gone</p><p>411 Lenght Required</p>               
-                <p>412 Precondition Failed</p><p>413 Request Entity To Large</p> 
-                <p>414 Connection Terminate</p>
+                <p><b>400</b> Bad Request</p>
+                <p><b>401</b> Unauthorized</p>
+                <p><b>402</b> Payment Required</p>
+                <p><b>403</b> Forbidden</p>               
+                <p><b>404</b> Not Found</p>
+                <p><b>405</b> Method Not Allowed</p>               
+                <p><b>406</b> not acceptable for url</p>
+                <p><b>407</b> Proxy Authentication</p>
+                <p><b>408</b> Request Timeout</p>
+                <p><b>409</b> Conflict</p>               
+                <p><b>410</b> Gone</p>
+                <p><b>411</b> Lenght Required</p>               
+                <p><b>412</b> Precondition Failed</p>
+                <p><b>413</b> Request Entity To Large</p> 
+                <p><b>414</b> Connection Terminate</p>
 
                 <h4>Server Error(5xx)</h4>
-                <p>500 Internal Server Eror</p><p>501 Not Implanted</p>
-                <p>502 Bad Gateway</p><p>503 Server Unavailable</p>               
-                <p>504 Gateway Timeout</p><p>505 Http Version Not Supported</p>
+                <p><b>500</b> Internal Server Eror</p>
+                <p><b>501</b> Not Implanted</p>
+                <p><b>502</b> Bad Gateway</p>
+                <p><b>503</b> Server Unavailable</p>               
+                <p><b>504</b> Gateway Timeout</p>
+                <p><b>505</b> Http Version Not Supported</p>
 	</div>
 	<button class="accordion"><h5>HTTP Request Methods</h5></button>
     <div class="panel">
@@ -250,20 +275,6 @@
 	<p><h4>Server</h4> - Contains the details of what software is being used to the origin server to handle the requst.</p>
 	<p><h4>Vary</h4> - ndicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
 	<p><h4>WWW-Authenticate</h4> -It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
-
-+	<h3>Entity Header fields</h3>
-+	<p><h4>Allow</h4>lists the set of methods supported by the resource identified by the Request-URI.</p>
-+	<p><h4>Content-Encoding</h4>is used as a modifier to the media-type.</p>
-+	<p><h4>Content-Language</h4>describes the natural language(s) of the intended audience for the enclosed entity.</p>
-+	<p><h4>Content-Length</h4>indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET. </p>
-+	<p><h4>Content-Location</h4>MAY be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource's URI.</p>
-+	<p><h4>Content-MD5</h4>as defined in RFC 1864, is an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body.</p>
-+	<p><h4>Content-Range</h4>is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</p>
-+	<p><h4>Content-Type</h4>indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. </p>
-+	<p><h4>Expires</h4>gives the date/time after which the response is considered stale.</p>
-+	<p><h4>Last-Modified</h4>indicates the date and time at which the origin server believes the variant was last modified.</p>
-+	<p><h4>extension-header</h4>mechanism allows additional entity-header fields to be defined without changing the protocol, but these fields cannot be assumed to be recognizable by the recipient.</p>
-
 </div>
     <h1 id = "title"> Hypertext Markup Language </h1>
     <button class="accordion"><h5>HTML</h5></button>
@@ -285,7 +296,7 @@
         </button>
     <div class="panel">
         <p>
-            The founder of HTML was Tim Berners-Lee and his product was made attractive to the general public by Mosaic browser which was evolved at NCSA. It has become extremely popular and well-known in the 1990’s when the Internet had been developing rapidly. During this period, HTML was broadened and presented in different modifications. The Internet strongly depends on vendors and page creators who share the joint conventions for HTML. The understanding that success of Web development is based on integration of the rules has helped the Web community to create united specifications for HTML. 
+            The founder of HTML was <b>Tim Berners-Lee</b> and his product was made attractive to the general public by Mosaic browser which was evolved at NCSA. It has become extremely popular and well-known in the 1990’s when the Internet had been developing rapidly. During this period, HTML was broadened and presented in different modifications. The Internet strongly depends on vendors and page creators who share the joint conventions for HTML. The understanding that success of Web development is based on integration of the rules has helped the Web community to create united specifications for HTML. 
 
             <br>
                     
@@ -298,12 +309,14 @@
     </div>
         <button class="accordion"><h5>HTML Versions</h5></button>
         <div class="panel">
-            <p>1. HTML - 1991 </p>
-            <p>2. HTML 2.0 - 1995 </p>
-            <p>3. HTML 3.2 - 1997 </p>
-            <p>3. HTML 4.01 - 1999 </p>
-            <p>3. XHTML - 2000 </p>
-            <p>3. HTML5 - 2014 </p>
+            <ol>
+                <li><p> HTML - 1991 </p></li>
+                <li><p> HTML 2.0 - 1995 </p></li>
+                <li><p> HTML 3.2 - 1997 </p></li>
+                <li><p> HTML 4.01 - 1999 </p></li>
+                <li><p> XHTML - 2000 </p></li>
+                <li><p> HTML5 - 2014 </p></li>
+            </ol>
     </div>
 	<script src="../js/accordion.js"></script>
 </body>
