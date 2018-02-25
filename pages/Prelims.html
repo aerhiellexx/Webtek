@@ -263,16 +263,28 @@
 	    <p><h4>Referer</h4> - Allows a server to generate a list of link to the resources for logging and caching. </p>
 	    <p><h4>User-Agent</h4> - A header field contains where a user agent request came from.</p>
 
-	    <h3>Respone Header fields</h3>
+	    <h3>Response Header fields</h3>
 	    <p><h4>Accept-Ranges</h4> - Allows the server to indicate it's acceptance of range on the resource.</p>
 	    <p><h4>Age</h4> - The amount of time since a responce was made from the server.</p>
 	    <p><h4>Etag</h4> - The current value of the entity tag for requested variant.</p>
-	    <p><h4>Location</h4> -Redirecting the user to other location other than the requested Url of the new resource or site and the user must have a 3xx reponse.</p>
+	    <p><h4>Location</h4> - Redirecting the user to other location other than the requested Url of the new resource or site and the user must have a 3xx reponse.</p>
 	    <p><h4>Proxy-Authenticate</h4> - Indicates the authentication scheme and parameter to the proxy.</p>
 	    <p><h4>Retry-After</h4> - Indicates how long the service to unavailable to the user. 503 Service Unavailble.</p>
 	    <p><h4>Server</h4> - Contains the details of what software is being used to the origin server to handle the requst.</p>
-	    <p><h4>Vary</h4> - ndicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
-	    <p><h4>WWW-Authenticate</h4> -It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
+	    <p><h4>Vary</h4> - Indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
+	    <p><h4>WWW-Authenticate</h4> - It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
+
+        <h3>Entity Header fields</h3>
+        <p><h4>Allow</h4> - Lists all the methods that are supported for a particular resource. This header may be provided in a server response as a guide to the client regarding what methods it may use on the resource in the future. </p>
+        <p><h4>Content encoding</h4> - Describes any optional method that may have been used to encode the entity. This header is most often used when transferring entities that have been compressed; it tells the recipient what algorithm has been used so the entity can be uncompressed. </p>
+        <p><h4>Content language</h4> - Specifies the natural (human) language intended for using the entity. This is an optional header, and may not be appropriate for all resource types. Multiple languages may be specified, if needed. </p>
+        <p><h4>Content length</h4> - Indicates the size of the entity in octets. This header is important, as it is used by the recipient to determine the end of a message. However, it may only be included in cases where the length of a message can be fully determined prior to transmitting the entity. </p>
+        <p><h4>Content location</h4> - Specifies the resource location of the entity, in the form of an absolute or relative uniform resource locator (URL). This is an optional header, and is normally included only in cases where the entity has been supplied from a location different from the one specified in the request. </p>
+        <p><h4>Content MD5</h4> - Contains an MD5 digest for the entity, used for message integrity checking. </p>
+        <p><h4>Content range</h4> - Sent when a message contains an entity that is only part of a complete resource; for example, a fragment of a file sent in response to an HTTP GET request containing the Range header. The Content-Range header Indicates what portion of the overall file this message contains, as well as the total size of the resource. </p>
+        <p><h4>Content type</h4> - Indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. </p>
+        <p><h4>Expires</h4> - Specifies a date and time after which the entity in the message should be considered “stale”. This may be used to identify certain entities that should be held in HTTP caches for longer or shorter periods of time than usual. </p>
+        <p><h4>Last Modified</h4> - Indicates the date and time when the server believes the entity was last changed. This header is often used to determine if a resource has been modified since it was last retrieved. </p>
 </div>
 <button class="accordion"><h5>HTTP Functionality</h5></button>
     <div class="panel">
