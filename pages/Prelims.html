@@ -53,7 +53,7 @@
         <p>Web is a service that operates over the Internet, as e-mail does. Information system on the internet that allows documents and other web resources are identified by UNIFORM RESOURCE LOCATOR (URL), interlinked by hypertext links, and can be accessed via the internet.  
         </p>
     </div>
-    
+
     <button class="accordion"><h5> Webpage, Website, Web Server, Search Engine</h5></button>
     <div class="panel">
         <section>
@@ -158,6 +158,69 @@
         </section>
 
     </div>
+
+    <button class="accordion">
+        <h5> Aboslute URL and Relative URL</h5>
+    </button>
+    <div class="panel">
+        <p>
+           To differentiate and understand what and absolute and relative URL is examples will be provided. 
+        </p>
+
+        <section>
+            <h3>Absolute URL</h3>
+            <p>
+             <pre>
+            Full URL
+            https://example.org/docs/topics
+            https://example.org/docs/topics/topic1
+            Implicit protocol
+            //example.org/docs/topics
+            Implicit domain name
+            //docs/topics
+             </pre>
+                 <br>   
+                This shows that absolute protocol fetches its resource from the root directory. Where you must specify the location of a resource which you want to access. You can also easily identify an absolute URL if it uses the “ / ” character.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Relative URL
+            </h3>
+            <p>
+                <b>Example if this URL is entered https://example.org/docs/topics.</b>
+                <br>
+                Assuming you wanted to access a sub-resource located in /topic1/part1. You will not need to type in every directory to point to that resource. Using relative URL and because the URL does not start with the “ / ” character the browser will attempt to find the resource. So what we really wanted to locate is the address http://example.org/docs/topics/topic1/part1
+                
+            </p>
+        </section>
+    </div>
+    <button class="accordion">
+        <h5> Domain Names</h5>
+    </button>
+    <div class="panel">
+        <section>
+            <h3> What are Domain Names?</h3>
+            <p>
+                Domain names are human readable addresses in the web and domain names uses semantic URL in which users can easily remember a resource in the web. Users can access any website using IP address of a website but this will be hard for people to remember a lot IP addresses because IP a single IP address contains 32 bits for IPv4. (eg. 192.168.1.1)
+            </p>
+        </section>
+
+        <section>
+            <h3> Domain Name Structure</h3>
+            <img src="../images/Domain.png" alt="Domain_Name">
+        </section>
+
+        <section>
+            <h4>TLD (Top-Level Domain)</h4>
+            <p>TLD provides user information about what service does a website server (eg. .com, .org, .net, .ph, .us etc)</p>
+        </section>
+        <section>
+            <h4>Label (Component)</h4>
+            <p>This contains any letter or word and can be referred to as a Secondary-Level Domain</p>
+        </section>        
+    </div>
+
        
 	<h1 id = "title"> Hypertext Transfer Protocol </h1>
 	<button class="accordion"><h5>HTTP Versions</h5></button>
