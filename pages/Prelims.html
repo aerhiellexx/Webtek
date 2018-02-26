@@ -160,7 +160,7 @@
     </div>
 
     <button class="accordion">
-        <h5> Aboslute URL and Relative URL</h5>
+        <h5> Absolute URL and Relative URL</h5>
     </button>
     <div class="panel">
         <p>
@@ -293,7 +293,7 @@
         </p>
     </div>
     <button class="accordion">
-         <h5>Internet:"A Network of Networks</h5>
+         <h5>Internet:"A Network of Networks"</h5>
      </button>    
     <div class="panel">
        <p>
@@ -309,7 +309,7 @@
      </button>    
     <div class="panel">
        <p>
-            We now know that the Internet a large network and it is an infrastructure while the web is service that users can use to connect and communicate to other users that are also connected in the web.
+            We now know that the Internet is a large network and it is an infrastructure while the web is a service that users can use to connect and communicate to other users that are also connected in the web.
        </p>
     </div>     
 	<h1 id = "title"> Hypertext Transfer Protocol </h1>
@@ -404,16 +404,29 @@
                 <p><b>504</b> Gateway Timeout</p>
                 <p><b>505</b> Http Version Not Supported</p>
 	</div>
-	<button class="accordion"><h5>HTTP Request Methods</h5></button>
+    <button class="accordion"><h5>HTTP Request Methods</h5></button>
     <div class="panel">
-    		<p><h4>Get</h4> - used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity. </p>
-    		<p><h4>Head</h4> - identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers. </p>
-    		<p><h4>Post</h4> - used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data. </p>
-    		<p><h4>Post</h4> - used to request the server to store the enclosed entity in the message body under the specified request uri. </p>
-    		<p><h4>Delete</h4> - used to request the server to delete the resource identified by the request uri. </p>
-    		<p><h4>Options</h4> - used to request from the server information about the communication options available for the response identified by the required uri. </p>
-    		<p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
-    		<p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
+            <p><h4>Get</h4> - used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity. </p>
+            <p><h4>Head</h4> - identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers. </p>
+            <p><h4>Post</h4> - used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data. </p>
+            <p><h4>Post</h4> - used to request the server to store the enclosed entity in the message body under the specified request uri. </p>
+            <p><h4>Delete</h4> - used to request the server to delete the resource identified by the request uri. </p>
+            <p><h4>Options</h4> - used to request from the server information about the communication options available for the response identified by the required uri. </p>
+            <p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
+            <p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
+
+            <h4><strong>Idemponent Methods</strong></h4> 
+            <ul>
+                <li>The methods GET, HEAD, PUT, DELETE, TRACE, and OPTION are element of a set that is <strong>unchanged in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
+            <h4><strong>Safe Methods</strong></h4>
+            <ul>
+                <li>The methods POST, PUT, and DELETE are element of a set that has <strong>a change in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
+            <h4><strong>Unsafe Methods</strong></h4>
+            <ul>
+                <li>The methods GET, HEAD, TRACE, and OPTION are element of a set that has <strong>no change in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
     </div>
 <button class="accordion"><h5>HTTP Message Headers</h5></button>
     <div class="panel">
@@ -489,7 +502,7 @@
     <button class="accordion"><h5>HTML</h5></button>
     <div class="panel">
     	<p>
-    		HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript). 
+    		<b>HTML</b> (<b>HyperText Markup Language</b>) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript). 
 
     		<br>
 
