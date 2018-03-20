@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Midterms</title>
 	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/accordion.css" type="text/css" media="all">
 	<link rel = "icon" type = "img/png" href = "../images/Logo.png">
+	<script type="text/javascript" href="../js/accordion.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -39,10 +41,33 @@
 					<li class="dropdown">
 						<button class="dropbtn"><a href="../index.html">Home</a></button>
 					</li>
-
 			</nav>
 		</div>
 		</div>
-	</div>		
+	</div>
+	<br><br><br><br><br>
+
+	<h1 id = "title"> Cascading Style Sheets </h1>
+    <button class="accordion"><h5>CSS</h5></button>
+    <div class="panel">
+        <p>Language used to specify the presentation aspects (e.g layout and formatting) of structurally marked up documents.
+        <br>
+        Developed by <b>Hakon Wium Lie</b> (HTML Cascading Style Sheets /CHSS) and <b>Bert Bos</b> (Stream-based Sheet Proposal / SSP).</p>
+    </div>
+
+    <button class="accordion"><h5>CSS Versions</h5></button>
+        <div class="panel">
+            <ol>
+                <li><p> CSS Level 1 (CSS 1, W3C Recommendation, Dec 1996) </p></li>
+                <li><p> CSS Level 2 (CSS 2, W3C Recommendation, May 1998)</p></li>
+                <li><p> CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, June 2011) </p></li>
+                <li><p> CSS Level 3
+                		-modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
+                </p></li>
+            </ol>
+        </div>
+
+
+    <script src="../js/accordion.js"></script>
 </body>
 </html>
