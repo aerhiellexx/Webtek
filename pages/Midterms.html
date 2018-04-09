@@ -368,6 +368,73 @@
 					<li><p>firstChild, lastChild, nextSibling, previousSibling</p></li>
 					<li><p>firstElementChild, lastElementChild, nextElementSibling</p></li>
 				</ul>
+	<li><p> Traverse the DOM tree (from a given node) </p></li>
+                <ul>
+					<li><p>parentNode, parentElement</p></li>
+					<li><p>childNodes, children</p></li>
+					<li><p>firstChild, lastChild, nextSibling, previousSibling</p></li>
+					<li><p>firstElementChild, lastElementChild, nextElementSibling</p></li>
+				</ul>
+		
+				<li> construct/copy nodes:</li>
+				<ul>
+				<li><p>createElement() - method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p></li>
+				<li><p>createTextNode() - String that contains the data that to be put in the node</p></li>
+				<li><p>createAttribute() - Creates new attribute node and returns it</p></li>
+				<li><p>cloneNode() - Duplicates a node and returns it where the method is called</p></li>
+				<li><p>importNode() - Copies a node from other document and will insert it on the current document</p></li>
+            </ul>
+            <li><p>manipulate the DOM tree:</p></li>
+            <ul>
+            	<li><p>appendChild() - Method adds a node to the end of the list of children of a specified parent node. </p></li>
+            	<li><p>insertBefore() -  Method inserts a node before the reference node as a child of a specified parent node.</p></li>
+            	<li><p>replaceChild()-Method replaces one child node of the specified node with another.</p></li>
+            	<li><p>removeChild() - Method removes a child node from the DOM. Returns removed node.</p></li>
+            	<li><p>adoptChild() - Adopts a node. The node and its subtree is removed from the document it's in (if any), and its ownerDocument is changed to the current document. </p></li>
+
+            </ul>
+            <li><p>miscellaneous attributes and methods:</p></li>
+            <ul>
+            	<li><p>nodeType- To ditingush kind of nodes, such that element, text and comments.</p></li>
+            	<li><p>nodeName - Returns the name of the current node as a string</p></li>
+            	<li><p>nodeValue - Returns or sets the value of the current node.</p></li>
+            	<li><p>attributes - The namespace in which the target attribute and its associated values are defined.</p></li>
+            	<li><p>id</p></li>
+            	<li><p>tagName -Returns the tag name of the element on which it's called.</p></li>
+            	<li><p>className - Gets and sets the value of the class attribute of the specified element.</p></li>
+            	<li><p>classList-  Returns a live DOMTokenList collection of the class attributes of the element.</p></li>
+            	<li><p>ownerDocument - Read-only property returns the top-level document object for this node.</p></li>
+            	<li><p>documentElement - Returns the Element that is the root element of the document .</p></li>
+            	<li><p>hasChildNodes() - Method returns a Boolean value indicating whether the current Node has child nodes or not.</p></li>
+            	<li><p>normalize() - ,ethod puts the specified node and all of its sub-tree into a "normalized" form.</p></li>
+            	
+
+            </ul>
+            <li><p>manipulate attributes (for 'Element' nodes):</p></li>
+            <ul>
+            	<li><p>setAttribute()- Sets attribute to a element but if the element already exist its value updates</p></li>
+            	<li><p>getAttribute() - Returns a element if not exist it is null </p></li>
+            	<li><p>removeAttribute() - Removes an attribute from the specified element.</p></li>
+            	<li><p>setAttributeNode() - Adds a new Attr node to the specified element.</p></li>
+            	<li><p>getAttributeNode() - Returns the specified attribute of the specified element, as an Attr node.</p></li>
+            	<li><p>removeAttributeNode() - Removes the specified attribute from the current element.</p></li>
+            </ul>
+            <li><p>event handling:</p></li>
+            <ul>
+            	<li><p>addEventListener()-Sets up a function to be called whenever the specified event is delivered to the target. </p></li>
+            	<li><p>removeEventListener() - The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process</p></li>
+            	<li><p>dispatchEvent() - Invoking the affected EventListeners in the appropriate order.</p></li>
+            	
+            </ul>
+            <li><p>style handling:</p></li>
+            <ul>
+            	<li><p>styleSheets - </p></li>
+            	<li><p>ownerRule</p></li>
+            	<li><p>cssRules</p></li>
+            	<li><p>insertRule() - Method inserts a new CSS rule into the current style sheet, with some restrictions.</p></li>
+            	<li><p>deleteRule() - Method removes a style rule from the current style sheet object.</p></li>
+            	<li><p>getComputedStyle() - Method returns an object that reports the values of all CSS properties of an element after applying active stylesheets and resolving any basic computation those values may contain.</p></li>
+            </ul>			
             </ul>
 		</div>
 		<br><br>
