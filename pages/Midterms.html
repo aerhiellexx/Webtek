@@ -67,7 +67,7 @@
 	</div>
 	<button class="accordion"><h5>CSS Declarations</h5></button>
         <div class="panel">
-        	<h3>Properties</h3>
+        	<h3><p id = "border">Properties</p></h3>
             <ul>
 				<li>
 					<p>ShortHand Properties</p>				
@@ -88,7 +88,7 @@
 					</ul>
 				</li>
             </ul>
-			<h3>values</h3>
+			<h3><p id = "border">values</p></h3>
 			<ul>
                 <li><p> Value Processing </p></li>
 					<li><p> Value Types </p></li>
@@ -121,19 +121,31 @@
 					</ul>
 				</li>
             </ul>
+            <div class = "gallery">
+        	<a target = "_blank" href="../images/values.png"> 
+        	<img src="../images/values.png" alt="Values" width ="300" height="200">
+        </a>
+        <div class="desc">CSS Declaration: Values</div>
+		</div>
+		<div class = "gallery">
+        	<a target = "_blank" href="../images/values2.png"> 
+        	<img src="../images/values2.png" alt="Values2" width ="300" height="200">
+        </a>
+        <div class="desc">CSS Declaration</div>
+		</div>
         </div>		
     <button class="accordion"><h5>CSS Statements</h5></button>
 	<div class="panel">
-		<h3>At - Rules</h3>
+		<h3><p id = "border">At - Rules</p></h3>
 		<ul>
-			<li><p> @charset </p></li>
-			<li><p> @import </p></li>
-			<li><p> @namespace </p></li>
-			<li><p> @media </p></li>
-			<li><p> @supports </p></li>
-			<li><p> @page </p></li>
-			<li><p> @font-face </p></li>
-			<li><p> @keyframes </p></li>
+			<li><p> @charset - Defines the character set used by the style sheet. </p></li>
+			<li><p> @import - Tells the CSS engine to include an external style sheet. </p></li>
+			<li><p> @namespace - Tells the CSS engine that all its content must be considered prefixed with an XML namespace.</p></li>
+			<li><p> @media - A conditional group rule that will apply its content if the device meets the criteria of the condition defined using a media query. </p></li>
+			<li><p> @supports - Also a group rule that will apply its content if the browser meets the criteria of the given condition. </p></li>
+			<li><p> @page - Describes the aspect of layout changes that will be applied when printing the document. </p></li>
+			<li><p> @font-face - Describes the aspect of an external font to be downloaded. </p></li>
+			<li><p> @keyframes - - Describes the aspect of intermediate steps in a CSS animation.</p></li>
 		</ul>
 	</div>
 	<button class="accordion"><h5>CSS Rule Sets (a.k.a CSS Rule, Style Rule)</h5></button>
@@ -143,7 +155,7 @@
 			<li><p>Selector-Structure used as a condition in CSS.</p></li>
 			<li><p>Selector Syntax-chain of one or more sequence of simple selectors separated by combinators with one pseudo-element possibly appended to the last sequence.	</p></li>
 		</ul>
-	<h3>Simple Selector </h3>
+	<h3><p id = "border">Simple Selector </p></h3>
 	<ul>
 		<li><p>Type Selector</p></li>
 		<li><p>Universal Selector</p></li>
@@ -152,7 +164,7 @@
 		<li><p>ID Selector</p></li>
 		<li><p>Pseudo class</p></li>
 	</ul>
-	<h4>Dynamic Pseudo-classes</h4>
+	<h4><p id = "border">Dynamic Pseudo-classes</p></h4>
 	<ul>	
 		<li>Link pseudo-classes
 		<ul>
@@ -167,7 +179,7 @@
 			<li>:focus</li>
 		</ul>
 	</ul>	
-	<h4>Target pseudo</h4>
+	<h4><p id = "border">Target pseudo</p><p id = "border"></h4>
 	<ul>
 	    <li>:target <sup>css3</sup></li>
 	</ul>
@@ -179,7 +191,7 @@
 			</ul>
 		</li>
 	</ul>
-	<h4>Structural pseudo-classes</h4>
+	<h4><p id = "border">Structural pseudo-classes</p></h4>
 	<ul>
 		<li>root<sup>css3</sup></li>
 		<li>first-child</li>
@@ -193,12 +205,30 @@
 		<li>nth-of-type()<sup>css3</sup></li>
 		<li>nth-last-of-type()<sup>css3</sup></li>
 		<li>emply<sup>css3</sup></li>
-	</ul>		
+	</ul>
+	<div class = "gallery">
+        	<a target = "_blank" href="../images/css-selector.png"> 
+        	<img src="../images/css-selector.png" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">CSS Selector</div>
+		</div>
+		<div class = "gallery">
+        	<a target = "_blank" href="../images/pseudo-classes.jpg"> 
+        	<img src="../images/pseudo-classes.jpg" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">Pseudo Classes</div>
+		</div>
+		<div class = "gallery">
+        	<a target = "_blank" href="../images/structure-class.jpg"> 
+        	<img src="../images/structure-class.jpg" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">Structural Pseudo Class</div>
+		</div>		
 	</div>	
 	<button class="accordion"><h5>CSS Rule Precedence</h5></button>
         <div class="panel">
-			<h3>Css Rule Precedence<p>- An HTML element maybe the subject of the selectors of multiple style rule. When such rules target different properties their effect cascade.</p></h3>
-			<h3>By origin and importance</h3>
+			<h3><p id = "border">Css Rule Precedence</p><p>- An HTML element maybe the subject of the selectors of multiple style rule. When such rules target different properties their effect cascade.</p></h3>
+			<h3><p id = "border">By origin and importance</p></h3>
             <ul>
             	<li><p>Transition Declarion </p></li>
             	<li><p>Important User Agent Declaration</p></li>
@@ -212,25 +242,44 @@
             	<li><p>Normal User Declaration</p></li>
             	<li><p>Normal User Agent Declaration</p></li>
 		    </ul>
-		    <h3>By Specificity</h3>
+		    <h3><p id = "border">By Specificity</p></h3>
 		    <ul>
 		     	<li><p>Inline styles (1) or not (0)</p></li>
 		     	<li><p>Number of ID attributes in selector</p></li>
 		     	<li><p>Number of other attributes and pseudo-classes in selector</p></li>
 		     	<li><p>Number of element names and pseudo-elements in selector</p></li>
 		    </ul>
-		    <h3>By order</h3>
+		    <h3><p id = "border">By order</p></h3>
         </div>	
 	<button class="accordion"><h5>CSS Preprocessors Framework and Polyfills</h5></button>
         <div class="panel">
-        	<h3>Css Preprocessors</h3>
+        	<h3><p id = "border">Css Preprocessors</p></h3>
 				<p>Generated CSS using a custom language syntax that typically includes features that dont exist in pure css</p>
-			<h3>SASS(Snytactically Awesome Style Sheets)</h3>
+			<h3><p id = "border">SASS(Snytactically Awesome Style Sheets)</p></h3>
 				<p>Is an extension of CSS that enables user to use variables, nested rules inline imports. It helps user to organised and create sheets faster.</p>
-			<h3>LESS(Leaner Style Sheets)</h3>
+			<h3><p id = "border">LESS(Leaner Style Sheets)</p></h3>
 				<p>It is a backwards-compatible language extention for CSS.</p>
-			<h3>STYLUS</h3>
+			<h3><p id = "border">STYLUS</p></h3>
 				<p>It has an extremely permissive syntax,It has a build in Node.js, It support CSS syntax support, mixins, keywords arguments, variables , arithmetic, logic and equality operations. </p>
+			<div class = "gallery">
+        	<a target = "_blank" href="../images/sass.jpg"> 
+        	<img src="../images/sass.jpg" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">SASS</div>
+		</div>
+		<div class = "gallery">
+        	<a target = "_blank" href="../images/less.png"> 
+        	<img src="../images/less.png" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">LESS</div>
+		</div>
+		<div class = "gallery">
+        	<a target = "_blank" href="../images/stylus.png"> 
+        	<img src="../images/stylus.png" alt="Hakon" width ="100" height="50">
+        </a>
+        <div class="desc">STYLUS</div>
+		</div>
+
 		</div>		
 	<h1 id = "title">JavaScript</h1>
 	<button class="accordion"><h5>Js</h5></button>
@@ -240,7 +289,7 @@
 				JavaScript was invented by <b>Brendan Eich</b> in 1995, and became an ECMA standard in 1997.
 			</p>
 			<ul>
-			<h4>Terms:</h4>			
+			<h4> Terms:</h4>			
 				<li>
 					<p>
 						<b>Scripting Language</b>,
@@ -300,7 +349,6 @@
 				</ol>
 			</p>
 		</div>
-	
 	
 
 
