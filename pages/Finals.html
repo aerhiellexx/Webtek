@@ -3,7 +3,10 @@
 <head>
 	<title>Finals</title>
 	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../styles/download.css">
+	<link rel="stylesheet" href="../styles/accordion.css" type="text/css" media="all">
 	<link rel = "icon" type = "img/png" href = "../images/Logo.png">
+	<script type="text/javascript" href="../js/accordion.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -39,10 +42,50 @@
 					<li class="dropdown">
 						<button class="dropbtn"><a href="../index.html">Home</a></button>
 					</li>
-
-			</nav>
+				</nav>
+			</div>
 		</div>
 	</div>
-	</div>
+	<br><br><br><br><br>
+	<h1 id = "title"> PHP </h1>
+    <button class="accordion"><h5>PHP Fundamentals</h5></button>
+    <div class="panel">
+        <section>
+            <h3>PHP Basic Syntax</h3>
+            <p>
+             <b>Declaring Variables</b>
+             <br>
+                $variable name = value;
+            </p>
+         </section>
+
+		<section>
+            <p>
+             <b>Outputing Data</b>
+             <br>
+                $echo "Hello World";
+                <br>
+                print "World, Hello";
+                <br>
+                echo $variable;
+                <br>
+                print $number1 + $number2;
+            </p>
+         </section>
+
+         <section>
+            <p>
+             <b>Comments</b>
+             <br>
+                // one line PHP comment
+                <br>
+                /* multi-line PHP comment */
+                <br>
+                # one line shell style comment
+            </p>
+         </section>
+    </div>
+
+    <script src="../js/accordion.js"></script>
 </body>
 </html>
