@@ -95,7 +95,7 @@ div.desc {
 	text-align:left;
 	color: white;
 	font-family: rockwell;
-	font-size: 30px;
+	font-size: 25px;
 	float:left;
 	text-decoration: none;
 	list-style-type: none;
@@ -112,7 +112,7 @@ div.desc {
 /* Style The Dropdown Button */
 .dropbtn {
 	background-color: #ffc61a;
-	padding: 16px;
+	padding: 12px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
@@ -130,7 +130,7 @@ div.desc {
 	
 .dropbtn2 {
 	background-color: #ffc61a;
-	padding: 16px;
+	padding: 12px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
@@ -149,7 +149,7 @@ div.desc {
 .dropbtn3 {
 	background-color: #ffc61a;
 	color: white;
-	padding: 16px;
+	padding: 12px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
@@ -179,20 +179,20 @@ div.desc {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	min-width: 70px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-	border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 10px 10px;
 	}
 
 /* Links inside the dropdown */
 .dropdown-content a {
 	color: black;
 	font-family: rockwell;
-	padding: 12px 16px;
+	padding: 8px 10px;
 	text-decoration: none;
 	display: block;
-	border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 10px 10px;
 	}
 
 /* Change color of dropdown links on hover */
@@ -236,4 +236,7 @@ div.desc {
 	letter-spacing: 5;
 	font-family: rockwell;
 	line-height: 80px;
+}
+#quit{
+	color: black;
 }
